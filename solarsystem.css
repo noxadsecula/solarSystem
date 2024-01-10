@@ -1,0 +1,95 @@
+/* General Settings */
+body {
+    width: auto;
+    height: 100%;
+    background-image: url(assets/galaxy.gif);
+}
+
+
+
+/* Container Settings */
+.container {
+    margin: auto;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+}
+
+input{
+    margin: 5px;
+    height: 31px;
+}
+
+select{
+    margin: 5px;
+    height: 36px;
+}
+
+
+
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.calculator{
+    height: 36px;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333; 
+    border: 2px solid #555; 
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.calculator::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #00f, #0f0, #f00); /* Neon gradient colors */
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  
+}
+
+.calculator:hover {
+    opacity: 1;
+    cursor: pointer;
+    background-color: black;
+  }
+
+.textDiv{
+    display:flex;
+    height: 500px;
+    align-items: center;
+    
+}
+
+
+.textDiv p {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+
+
+.messageText{
+    font-size: large;
+    color: white;
+}
